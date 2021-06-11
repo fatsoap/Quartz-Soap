@@ -1,0 +1,53 @@
+### Add Idea
+
+POST http://localhost:3000/ideaBox HTTP/1.1
+content-type: application/json
+
+{   
+    "method": "CREATE",
+    "idea": {
+        "info": "FFFFFFFA",
+        "score": "2"
+    }
+}
+
+### Update Idea
+
+POST http://localhost:3000/ideaBox HTTP/1.1
+content-type: application/json
+
+{   
+    "method": "UPDATE",
+    "idea": {
+        "id": "3",
+        "info": "ASDASD",
+        "score": "ASDASD"
+    }
+}
+
+### Delete Idea
+
+POST http://localhost:3000/ideaBox HTTP/1.1
+content-type: application/json
+
+{   
+    "method": "DELETE",
+    "idea": {
+        "id": "1"
+    }
+}
+
+### Get All Idea
+
+GET http://localhost:3000/ideaBox HTTP/1.1
+
+
+### Get Idea
+
+GET http://localhost:3000/ideaBox/2 HTTP/1.1
+
+### Get Word
+
+GET http://localhost:3000/ideaBox/generate/10 HTTP/1.1
+
+
