@@ -9,7 +9,7 @@ app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
-app.use('/api/ideaBox', ideaBoxRouter);
+app.use('/api/idea', ideaBoxRouter);
 //app.use('/todo', todoRouter);
 //app.use('/sha256', SHA256);
 //app.use('/todo', todoRouter);

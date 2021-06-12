@@ -1,6 +1,6 @@
 ### Add Idea
 
-POST http://localhost:3000/ideaBox HTTP/1.1
+POST http://localhost:3001/api/idea HTTP/1.1
 content-type: application/json
 
 {   
@@ -13,7 +13,7 @@ content-type: application/json
 
 ### Update Idea
 
-POST http://localhost:3000/ideaBox HTTP/1.1
+POST http://localhost:3001/api/idea HTTP/1.1
 content-type: application/json
 
 {   
@@ -27,7 +27,7 @@ content-type: application/json
 
 ### Delete Idea
 
-POST http://localhost:3000/ideaBox HTTP/1.1
+POST http://localhost:3001/api/idea HTTP/1.1
 content-type: application/json
 
 {   
@@ -39,15 +39,15 @@ content-type: application/json
 
 ### Get All Idea
 
-GET http://localhost:3000/ideaBox HTTP/1.1
+GET http://localhost:3001/api/idea HTTP/1.1
 
 
 ### Get Idea
 
-GET http://localhost:3000/ideaBox/2 HTTP/1.1
+GET http://localhost:3001/api/idea/2 HTTP/1.1
 
 ### Get Word
 
-GET http://localhost:3000/ideaBox/generate/10 HTTP/1.1
+GET http://localhost:3001/api/idea/generate/10 HTTP/1.1
 
 
