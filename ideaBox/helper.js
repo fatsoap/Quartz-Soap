@@ -18,9 +18,9 @@ module.exports.addIdeaChecker = function(idea) {
         } else if(!idea.info) {
             pass = false;
             throw 'Idea info is undefined';
-        } else if(!idea.score) {
+        } else if(!idea.description) {
             pass = false;
-            throw 'Idea score is undefined';
+            throw 'Idea description is undefined';
         }
     } catch(err) {
         errorHandler('idea add checker', err);
@@ -40,9 +40,9 @@ module.exports.updateIdeaChecker = function(idea) {
         } else if(!idea.info) {
             pass = false;
             throw 'Idea info is undefined';
-        } else if(!idea.score) {
+        } else if(!idea.description) {
             pass = false;
-            throw 'Idea score is undefined';
+            throw 'Idea description is undefined';
         }
     } catch(err) {
         errorHandler('idea update checker', err);

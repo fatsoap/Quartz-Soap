@@ -15,11 +15,11 @@ module.exports.getAll = async function() {
 }
 
 
-module.exports.add = async function({ info, score }) {
+module.exports.add = async function({ info, description }) {
     let data = await read();
     if(!data) return false;
     try {
-        data.push({ info, score });
+        data.push({ info, description });
     } catch(err) {
         errorHandler('module add()', err);
         return false;
@@ -29,12 +29,12 @@ module.exports.add = async function({ info, score }) {
     return true;
 }
 
-module.exports.update = async function({ id, info, score }) {
+module.exports.update = async function({ id, info, description }) {
     let data = await read();
     if(!data) return false;
     try {
         if(id >= data.length) throw 'Id out of data length';
-        data[id] = { info, score };
+        data[id] = { info, description };
     } catch(err) {
         errorHandler('module update()', err);
         return false;

@@ -6,8 +6,8 @@ content-type: application/json
 {   
     "method": "CREATE",
     "idea": {
-        "info": "FFFFFFFA",
-        "score": "2"
+        "info": "FA",
+        "description": "2wda"
     }
 }
 
@@ -19,9 +19,9 @@ content-type: application/json
 {   
     "method": "UPDATE",
     "idea": {
-        "id": "3",
+        "id": "0",
         "info": "ASDASD",
-        "score": "ASDASD"
+        "description": "ASDASD"
     }
 }
 

@@ -1,6 +1,7 @@
 import React from 'react';
 
 import { allBar } from '../helpers/const';
+import  SideBarBtn from  '../components/SideBarBtn';
 
 /**
  * SideBar Props
@@ -9,8 +10,17 @@ import { allBar } from '../helpers/const';
  */
 
 const SideBar = () => {
+
     return(
-        <div>s</div>
+        <div className="side-bar__box">
+            {allBar.map((bar, i) => {
+                return(
+                    <div key={i}>
+                        <SideBarBtn bar={bar}/>
+                    </div>
+                )
+            })}
+        </div>
     )
 }
 

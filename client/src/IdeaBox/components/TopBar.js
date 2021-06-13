@@ -12,7 +12,7 @@ const TopBar = ({ nowTab, setTab }) => {
 
 
     return(
-        <div></div>
+        <header></header>
     )
 }
 

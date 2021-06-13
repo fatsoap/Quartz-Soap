@@ -7,17 +7,17 @@ import {
   Route,
   Redirect
 } from 'react-router-dom'
-import SideBar from './sideBar/SideBar';
+import NotFound from './NotFound/Screen';
 import IdeaBox from './IdeaBox/Screen';
 
 function App() {
   return (
     <div className="container">
-      <SideBar />
       <BrowserRouter>
         <Switch>
-          <Route path="/" exact component={NotFoundPage}/>
+          <Route path="/" exact component={NotFound}/>
           <Switch>
+            <Route path="/idea" exact={true}  component={IdeaBox} />
             <Route path="/idea/:tab"  component={IdeaBox} />
             <Redirect to="/" />
           </Switch>
