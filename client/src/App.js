@@ -15,13 +15,13 @@ function App() {
     <div className="container">
       <BrowserRouter>
         <Switch>
-          <Route path="/" exact component={NotFound}/>
+          <Route path="/not" exact component={NotFound}/>
           <Switch>
             <Route path="/idea" exact={true}  component={IdeaBox} />
             <Route path="/idea/:tab"  component={IdeaBox} />
-            <Redirect to="/" />
+            <Redirect to="/idea/generate" />
           </Switch>
-          <Redirect to="/" />
+          <Redirect to="/idea/generate" />
         </Switch>
       </BrowserRouter>
     </div>

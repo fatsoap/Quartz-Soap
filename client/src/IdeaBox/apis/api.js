@@ -12,3 +12,23 @@ export const getAll = async function() {
         return undefined;
     }   
 }
+
+export const getSome = async function() {
+    try {
+        const { data } = await axios.get(`${idea_url}/3`);
+        return data;
+    } catch(err) {
+        errorHandler(err);
+        return undefined;
+    }   
+}
+
+export const getRandom = async function() {
+    try {
+        const { data } = await axios.get(`${idea_url}/generate/50`);
+        return data;
+    } catch(err) {
+        errorHandler(err);
+        return undefined;
+    }   
+}

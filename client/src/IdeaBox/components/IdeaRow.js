@@ -1,13 +1,19 @@
 import React from 'react';
 
-const IdeaRow = ({ key, idea}) => {
+const IdeaRow = ({ isSelect, idea}) => {
+    let info = idea.info;
+    let description = idea.description;
+    if(typeof(idea) === 'string') {
+        info = idea;
+        description = '';
+    }
     return(
-        <div key={key} className="ideaRow" style={styles.row}>
+        <div className="ideaRow" style={styles.row}>
             <h1 style={styles.title}>
-                {idea.info}
+                {info}{isSelect? 'y':'n'}
             </h1>
             <h2 style={styles.sub}>
-                {idea.description}
+                {description}
             </h2>
         </div>
     )
